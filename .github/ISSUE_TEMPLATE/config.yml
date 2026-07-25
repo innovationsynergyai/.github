@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/innovationsynergyai/.github/blob/main/SECURITY.md
+    about: Do not open a public issue. Report privately per the security policy.
+  - name: Support and questions
+    url: https://github.com/innovationsynergyai/.github/blob/main/SUPPORT.md
+    about: How to get help with a shipped app, a client engagement, or an open source repository.
+  - name: Start a project
+    url: https://innovationsynergyai.com
+    about: Apple-native B2B and B2X apps, AI agents, and integrations. Forward deployed.
+  - name: East Coast Air on the App Store
+    url: https://apps.apple.com/us/app/east-coast-air/id6770141635
+    about: See a shipped example of the work.
