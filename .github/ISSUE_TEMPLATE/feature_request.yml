@@ -1,0 +1,82 @@
+name: Feature request
+description: Propose a new capability or an improvement
+title: "[Feature]: "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Good feature requests start with the operational problem, not the solution. Tell us what the business or the user cannot do today.
+
+        Do not include client names, customer records, or engagement details.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve
+      description: Who is blocked, and what does it cost them today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: What should happen instead. Sketches and screenshots welcome.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Including doing nothing, or handling it outside the app.
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      multiple: true
+      options:
+        - iOS / iPhone
+        - iPadOS / iPad
+        - macOS
+        - visionOS
+        - watchOS
+        - Server / backend
+        - All platforms
+    validations:
+      required: true
+  - type: dropdown
+    id: user-type
+    attributes:
+      label: Who is this for
+      options:
+        - Field technician
+        - Office or dispatch staff
+        - Business owner or manager
+        - End customer
+        - Developer or integrator
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact if this is not built
+      options:
+        - Blocking daily operations
+        - Significant manual workaround required
+        - Minor friction
+        - Nice to have
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and this is not a duplicate
+          required: true
+        - label: I described the problem, not just the feature
+          required: true
