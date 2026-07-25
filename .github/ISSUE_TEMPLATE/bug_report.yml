@@ -1,0 +1,96 @@
+name: Bug report
+description: Something is broken or behaving incorrectly
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. Please do not include client names, customer records, credentials, or screenshots containing real customer data.
+
+        For security vulnerabilities, stop here and email michael@innovationsynergyai.com instead.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: Describe the actual behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Numbered steps. Reports without these usually get closed.
+      placeholder: |
+        1. Open the app
+        2. Tap ...
+        3. See error
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - iOS / iPhone
+        - iPadOS / iPad
+        - macOS
+        - visionOS
+        - watchOS
+        - Server / backend
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: os-version
+    attributes:
+      label: OS version
+      placeholder: "iOS 18.5"
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device model
+      placeholder: "iPhone 15 Pro"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App or package version
+      placeholder: "1.0.1 (build 12)"
+    validations:
+      required: true
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often does it happen
+      options:
+        - Every time
+        - Often
+        - Occasionally
+        - Happened once
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs, crash report, or screenshots
+      description: Paste console output or attach a crash log. Redact anything identifying.
+      render: shell
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and this is not a duplicate
+          required: true
+        - label: I removed all client and customer data from this report
+          required: true
